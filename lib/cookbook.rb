@@ -22,19 +22,13 @@ class Cookbook
     @recipes
   end
 
-  def mark_recipe_as_done(index)
-    recipe = @recipes[index]
-    recipe.mark_as_done!
-    save_to_csv
-  end
-
   private
 
   def save_to_csv
     CSV.open(@csv_file, "wb") do |csv|
-      csv << ["name", "description", "rating", "prep_time", "done"]
+      csv << ["name", "description"]
       @recipes.each do |recipe|
-        csv << [recipe.name, recipe.description, recipe.rating, recipe.prep_time, recipe.done?]
+        csv << [recipe.name, recipe.description]
       end
     end
   end
