@@ -23,6 +23,8 @@ class Router
     when 1 then @controller.list
     when 2 then @controller.create
     when 3 then @controller.destroy
+    when 4 then @controller.import
+    when 5 then @controller.mark_as_done
     when 9 then stop
     else
       puts "Wrong number!"
@@ -39,6 +41,8 @@ class Router
     puts "1 - List all recipes"
     puts "2 - Create a new recipe"
     puts "3 - Destroy a recipe"
+    puts "4 - Import a recipe from the web"
+    puts "5 - Mark recipe as done"
     puts "9 - Stop and exit the program"
     print "> "
   end

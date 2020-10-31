@@ -1,3 +1,6 @@
-name,description
-cookies,chocolate chip
-cake,bread and love
+name,description,rating,done
+cookies,chocolate chip,0,true
+cake,bread and love,0,false
+pumpkin pie,pumpkin and pie,4,false
+Triple Berry Crisp,"This is a wonderful berry crisp. I use a triple berry mixture of raspberries, blackberries, and blueberries, but just one works well too! My family loves it! Serve it with whipped cream and it looks great.",4.6,false
+Three Berry Pie,"Strawberries, raspberries, and blueberries are piled into a homemade pie shell, covered with a flaky top crust, and baked until bubbly and golden brown.",4.6,true
